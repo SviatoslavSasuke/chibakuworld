@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ChibakuWorld - Покупка донат-услуг</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="icon" href="styles\img\icon.png">
+    <link rel="stylesheet" href="styles\css\bootstrap.css">
+    <link rel="stylesheet" href="styles\css\site.css">
+    <link rel="stylesheet" href="styles\css\styles.css?v=3">
+    <link rel="stylesheet" href="styles\css\font-awesome.min.css">
+    <script src="https://bootswatch.com/_vendor/jquery/dist/jquery.min.js"></script>
+    <script src="https://bootswatch.com/_vendor/popper.js/dist/umd/popper.min.js"></script>
+    <script src="https://bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse bg-inverse navbar-toggleable-md">
+        <div class="container">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><span class="logo">Chibaku</span><strong>World</strong></a>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link"><i class="fa fa-home"></i> Главная</a></li>
+                    <li class="nav-item"><a href="rules.html" class="nav-link"><i class="fa fa-pencil"></i> Правила</a></li>
+                    <li class="nav-item"><a href="how.html" class="nav-link"><i class="fa fa-money"></i> Как купить?</a></li>
+                    <li class="nav-item"><a href="donate.html" class="nav-link"><i class="fa fa-database"></i> Описание привилегий</a></li>
+                    <li class="nav-item"><a href="https://vk.com/chibakuworldminecraftserver" class="nav-link"><i class="fa fa-send"></i> Контакты</a></li>
+                </ul>
+                <span class="navbar-text d-inline-block d-lg-none">
+                   <span class="wobble badge badge-danger">Онлайн: /</span> 
+                   <span class="badge badge-primary" onclick="prompt('Скопируйте наш IP адрес и вставьте в ваш клиент:',''); return false;">IP:</span>
+                   <a href="ref.html" class="wobble badge badge-success">Пригласить друзей</a>
+                </span>
+            </div>
+        </div>
+    </nav>
+    <div class="container nav-buttons d-none d-lg-flex">
+        <a class="button big" href="play.html"><img src="styles\img\btn_head_r2.png"><span>Начать играть</span></a>
+        <a class="button" href="ref.html"><img src="styles\img\btn_head_p2.png"><span>Пригласить друзей</span></a>
+        <a class="button" href="index.html"><img src="styles\img\btn_head_g2.png"><span>Онлайн:<br>/</span></a>
+    </div>
+    <div class="container">
+	
+        <div class="row">
+	<div class="col-12">
+		
+	</div>
+</div>
+<br>
+<div>
+    <div>
+        <div class="card card-body">
+                <div class="col-md-6">
+                    <ul class="nav nav-tabs nav-fill">
+                                           <li role="presentation" class="nav-item">
+                       <a href="#Привилегии" role="tab" class="nav-link active" data-toggle="tab">Привилегии</a>
+                      </li>
+                                           <li role="presentation" class="nav-item">
+                       <a href="#Кейсы" role="tab" class="nav-link " data-toggle="tab">Группы</a>
+                      </li>
+                                           <li role="presentation" class="nav-item">
+                       <a href="#Разбан" role="tab" class="nav-link " data-toggle="tab">Разбан</a>
+                      </li>
+                     
+                    </ul>
+                    <br>
+                    <div class="tab-content">
+                                             <div role="tabpanel" class="tab-pane active" id="Привилегии">
+                            <div class="alert alert-dismissible alert-primary text-center">
+                              Выбрана категория: <b>Привилегии</b>
+                            </div>
+                                                        <form method="post" id="phpmc">
+                                <div class="form-group has-feedback">
+                                    <label for="nick" class="form-control-label">Введите ваш ник:</label>
+                                    <input type="text" class="input-nick form-control" name="nickname" id="nickname" placeholder="Введите ник">
+                                </div>
+                                <div class="form-group">
+                                    <label for="group" class="form-control-label">Выберите товар:</label>
+                                    <select id="group" name="group" class="select-group form-control">
+                                        <option selected="" disabled="">Выберите товар</option>
+                                        <optgroup label="Привилегии">
+                                                                                    <option value="0">Шаринган - 200 рублей</option>
+                                                                                    <option value="1">Ринеган - 400 рублей</option>
+                                                                                    <option value="2">Расенган - 100 рублей</option>
+                                                                                    <option value="3">Мудрец шести путей - 500 рублей</option>
+                                                                                    <option value="4">Скоро </option>
+                                                                                    <option value="5">Скоро</option>
+                                                                                    <option value="6">Скоро</option>
+                                                                                    <option value="7">Скоро</option>
+                                                                                    <option value="8">Скоро</option>
+                                                                                    <option value="9">Скоро</option>
+                                        
+                                        </optgroup>
+                                    </select>
+                                </div>
+                                <button type="submit" name="buy" id="buy" class="submit buy_btn btn btn-warning btn-block">Купить / Доплатить</button>
+                            </form>
+                        </div>
+                                             <div role="tabpanel" class="tab-pane " id="Кейсы">
+                            <div class="alert alert-dismissible alert-primary text-center">
+                              Выбрана категория: <b>Привелегии(Группы)</b>
+                            </div>
+                                                        <form method="post" id="phpmc">
+                                <div class="form-group has-feedback">
+                                    <label for="nick" class="form-control-label">Введите ваш ник:</label>
+                                    <input type="text" class="input-nick form-control" name="nickname" id="nickname" placeholder="Введите ник">
+                                </div>
+                                <div class="form-group">
+                                    <label for="group" class="form-control-label">Выберите товар:</label>
+                                    <select id="group" name="group" class="select-group form-control">
+                                        <option selected="" disabled="">Выберите товар</option>
+                                        <optgroup label="Кейсы">
+                                                                                    <option value="40">Акацуки - 200 рублей</option>
+                                                                                    <option value="41">скоро</option>
+                                                                                    <option value="42">скоро</option>
+                                                                                    <option value="43">Ооцуцуки - 700 рублей</option>
+                                        
+                                        </optgroup>
+                                    </select>
+                                </div>
+                                <button type="submit" name="buy" id="buy" class="submit buy_btn btn btn-warning btn-block">Купить / Доплатить</button>
+                            </form>
+                        </div>
+                                             <div role="tabpanel" class="tab-pane " id="Разбан">
+                            <div class="alert alert-dismissible alert-primary text-center">
+                              Выбрана категория: <b>Разбан</b>
+                            </div>
+                                                        <form method="post" id="phpmc">
+                                <div class="form-group has-feedback">
+                                    <label for="nick" class="form-control-label">Введите ваш ник:</label>
+                                    <input type="text" class="input-nick form-control" name="nickname" id="nickname" placeholder="Введите ник">
+                                </div>
+                                <div class="form-group">
+                                    <label for="group" class="form-control-label">Выберите товар:</label>
+                                    <select id="group" name="group" class="select-group form-control">
+                                        <option selected="" disabled="">Выберите товар</option>
+                                        <optgroup label="Разбан">
+                                                                                    <option value="60">Разбан айпи и ника - 100 рублей</option>
+                                        
+                                        </optgroup>
+                                    </select>
+                                </div>
+                                <button type="submit" name="buy" id="buy" class="submit buy_btn btn btn-warning btn-block">Купить / Доплатить</button>
+                            </form>
+                        </div>
+                     
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+    <script src="styles\js\clipboard.js"></script>
+<script>
+    $(".spoiler-trigger").click(function() {
+        $(this).parent().next().collapse('toggle');
+    });
+</script>
+</body>
+
+</html>

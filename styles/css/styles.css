@@ -1,0 +1,257 @@
+﻿body{
+     background-image: url('../img/sexy.jpg');
+     background-position: center;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     background-size: cover;
+     -o-background-size: cover;
+     background-attachment: fixed;
+     background-color:#edeef0 
+}
+ .nav-tabs>li>a {
+     color: #555;
+}
+ .nav-tabs>li>a:hover {
+     color: #555;
+}
+ .logo {
+     background: linear-gradient(90deg, #cb7811, #f9fc25 100%, #fcce25);
+     -webkit-background-clip: text;
+     text-shadow: 0 0 7px #ff991bc7;
+     -webkit-text-fill-color: transparent;
+     color: #d0c24d;
+     font-weight: bold;
+}
+ .btn-gold{
+     color:#fff;
+     background-color:gold 
+}
+ .btn-turquoise{
+     color:#fff;
+     background-color:#40e0d0 
+}
+ .btn-darkviolet{
+     color:#fff;
+     background-color:#9400d3 
+}
+ .btn-deepskyblue{
+     color:#fff;
+     background-color:#00bfff 
+}
+ .btn-magenta{
+     color:#fff;
+     background-color:#ff00ff 
+}
+ .animated{
+     -webkit-animation-duration:1s;
+     animation-duration:1s;
+     -webkit-animation-fill-mode:both;
+     animation-fill-mode:both 
+}
+ .animated.infinite{
+     -webkit-animation-iteration-count:infinite;
+     animation-iteration-count:infinite 
+}
+ .animated.hinge{
+     -webkit-animation-duration:2s;
+     animation-duration:2s 
+}
+ @keyframes pulse{
+     from,to{
+         -webkit-transform:scale3d(1,1,1);
+         transform:scale3d(1,1,1) 
+    }
+     50%{
+         -webkit-transform:scale3d(1.05,1.05,1.05);
+         transform:scale3d(1.05,1.05,1.05) 
+    }
+}
+ .pulse{
+     -webkit-animation-name:pulse;
+     animation-name:pulse 
+}
+ @keyframes flash{
+     50%,from,to{
+         opacity:1 
+    }
+     40%{
+         opacity:0 
+    }
+}
+ .flash{
+     animation-name:flash 
+}
+ .animated.bounceIn,.animated.bounceOut,.animated.flipOutX,.animated.flipOutY{
+     animation-duration:.75s 
+}
+ @keyframes bounceIn{
+     20%,40%,60%,80%,from,to{
+         animation-timing-function:cubic-bezier(.215,.61,.355,1) 
+    }
+     0%{
+         opacity:0;
+         transform:scale3d(.3,.3,.3) 
+    }
+     20%{
+         transform:scale3d(1.1,1.1,1.1) 
+    }
+     40%{
+         transform:scale3d(.9,.9,.9) 
+    }
+     60%{
+         opacity:1;
+         transform:scale3d(1.03,1.03,1.03) 
+    }
+     80%{
+         transform:scale3d(.97,.97,.97) 
+    }
+     to{
+         opacity:1;
+         transform:scale3d(1,1,1) 
+    }
+}
+ .badge-pill {
+    font-size: 12;
+}
+.server {
+    font-size: 2.5em;
+    background: linear-gradient(90deg, #7f00ff 0%, #e100ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    padding: 0.3em 0.6em ;
+    border: 3px solid transparent;
+    border-image: linear-gradient(90deg, #7f00ff 0%, #e100ff 100%);
+    border-image-slice: 1;
+}
+
+/* PHPMC update buttons header */
+@font-face {
+    font-family: 'Bebas Neue';
+    src: local('Bebas Neue Bold'), local('BebasNeueBold'), url('../fonts/bebasneuebold.woff2') format('woff2'), url('../fonts/bebasneuebold.woff') format('woff'), url('../fonts/bebasneuebold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+.navbar .navbar-collapse .navbar-text>*{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.nav-buttons .button span{
+    font-family: 'Bebas Neue';
+    font-size: 31px;
+    line-height: 0.9;
+    color: #fff;
+    text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.25);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.nav-buttons .button img{
+    width: 100%;
+    height: 100%;
+}
+
+.nav-buttons .button{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.25s;
+    user-select: none;
+}
+.nav-buttons .button:hover{
+    transform: scale(1.05);
+}
+.nav-buttons .button:active{
+    transform: scale(0.95);
+}
+.nav-buttons .button.clipboard{
+    user-select: text;
+}
+.nav-buttons div.button:hover:not(.clipboard){
+    transform: none;
+}
+.nav-buttons div.button:not(.clipboard){
+    cursor: default;
+}
+.nav-buttons .button.big{
+    width: 175px;
+    height: 175px;
+}
+
+.clipboard span{
+    position: relative; }
+.clipboard span::before {
+    position: absolute;
+    width: 100%;
+    font-size: 60%;
+    content: "IP скопирован";
+    opacity: 0; }
+.clipboard.copied span {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+.clipboard.copied span:before {
+    -webkit-animation: copy-to-clipboard-animation 3s;
+    animation: copy-to-clipboard-animation 3s; }
+
+@-webkit-keyframes copy-to-clipboard-animation {
+    0% {
+        -webkit-transform: translateY(0rem);
+        transform: translateY(0rem);
+        opacity: 1; }
+    10% {
+        -webkit-transform: translateY(2.25rem);
+        transform: translateY(2.25rem);
+        opacity: 1; }
+    80% {
+        -webkit-transform: translateY(2.25rem);
+        transform: translateY(2.25rem);
+        opacity: 1; }
+    99% {
+        -webkit-transform: translateY(2.25rem);
+        transform: translateY(2.25rem);
+        opacity: 0; }
+    100% {
+        -webkit-transform: translateY(0rem);
+        transform: translateY(0rem);
+        opacity: 0; } }
+
+@keyframes copy-to-clipboard-animation {
+    0% {
+        -webkit-transform: translateY(0rem);
+        transform: translateY(0rem);
+        opacity: 1; }
+    10% {
+        -webkit-transform: translateY(2.25rem);
+        transform: translateY(2.25rem);
+        opacity: 1; }
+    80% {
+        -webkit-transform: translateY(2.25rem);
+        transform: translateY(2.25rem);
+        opacity: 1; }
+    99% {
+        -webkit-transform: translateY(2.25rem);
+        transform: translateY(2.25rem);
+        opacity: 0; }
+    100% {
+        -webkit-transform: translateY(0rem);
+        transform: translateY(0rem);
+        opacity: 0; } }

@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ChibakuWorld - Покупка донат-услуг</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="icon" href="..\styles\img\icon.png">
+    <link rel="stylesheet" href="..\styles\css\bootstrap.css">
+    <link rel="stylesheet" href="..\styles\css\site.css">
+    <link rel="stylesheet" href="..\styles\css\styles.css?v=3">
+    <link rel="stylesheet" href="..\styles\css\font-awesome.min.css">
+    <script src="https://bootswatch.com/_vendor/jquery/dist/jquery.min.js"></script>
+    <script src="https://bootswatch.com/_vendor/popper.js/dist/umd/popper.min.js"></script>
+    <script src="https://bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse bg-inverse navbar-toggleable-md">
+        <div class="container">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="..\index.html"><span class="logo">Chibaku</span><strong>World</strong></a>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a href="..\index.html" class="nav-link"><i class="fa fa-home"></i> Главная</a></li>
+                    <li class="nav-item"><a href="..\rules.html" class="nav-link"><i class="fa fa-pencil"></i> Правила</a></li>
+                    <li class="nav-item"><a href="..\how.html" class="nav-link"><i class="fa fa-money"></i> Как купить?</a></li>
+                    <li class="nav-item"><a href="..\donate.html" class="nav-link"><i class="fa fa-database"></i> Описание привилегий</a></li>
+                    <li class="nav-item"><a href="https://vk.me/cubesrv" class="nav-link"><i class="fa fa-send"></i> Контакты</a><li>
+                </ul>
+                <span class="navbar-text d-inline-block d-lg-none">
+                   <span class="wobble badge badge-danger">Онлайн: /</span> 
+                   <span class="badge badge-primary" onclick="prompt('Скопируйте наш IP адрес и вставьте в ваш клиент:','cubemc.ru:25565'); return false;">IP: </span>
+                   <a href="..\ref.html" class="wobble badge badge-success">Пригласить друзей</a>
+                </span>
+            </div>
+        </div>
+    </nav>
+    <div class="container nav-buttons d-none d-lg-flex">
+        <div class="button clipboard" data-clipboard-text="CUBEMC.RU:25565"><img src="..\styles\img\btn_head_p2.png"><span>IP<br></span></div>
+        <a class="button big" href="..\play.html"><img src="..\styles\img\btn_head_r2.png"><span>Начать играть</span></a>
+        <a class="button" href="..\ref.html"><img src="..\styles\img\btn_head_p2.png"><span>Пригласить друзей</span></a>
+        <a class="button" href="..\index.htm"><img src="..\styles\img\btn_head_g2.png"><span>Онлайн:<br>/</span></a>
+    </div>
+    <div class="container">
+	
+        <div class="row">
+	<div class="col-12">
+		
+	</div>
+</div>
+        <br>
+<div class="row">
+        <div class="card col-md-12" style="float: none; margin: 0 auto;">
+            <div class="card-body">
+				<center>
+					<h1 class="server"> всего за <strong> РУБЛЕЙ</strong></h1>
+					<div class="alert alert-danger">
+						ВЫ МОЖЕТЕ <strong>ПРИОБРЕСТИ</strong> ДАННУЮ ПРИВИЛЕГИЮ ЗА  РУБЛЕЙ ТОЛЬКО <strong>1 ФЕВРАЛЯ</strong>!<br>
+						Оплата производится любым удобным способом <strong>без комиссии</strong><br>
+					</div>
+					<hr>
+					<p>ПРЕИМУЩЕСТВА <strong>ДАННОЙ</strong> ПРИВИЛЕГИИ:</p>
+					<font color="green"><i class="fa fa-check"></i></font> Фирменная футболка от Манифеста<br><font color="green"><i class="fa fa-check"></i></font> Сертификат на привилегию <strong>Оператор</strong> (цена на сайте 2000 грн)<br><font color="green"><i class="fa fa-check"></i></font> Одна или несколько фирменных игрушек <strong>Minnecraft</strong>!<br><font color="green"><i class="fa fa-check"></i></font> Личная роспись от <strong>Манифеста</strong> <br>
+				</center>
+				<hr>
+                <form method="post" id="phpmc">
+					<div class="col col-md-5" style="float: none; margin: 0 auto;">
+						<div class="form-group has-feedback">
+							<label for="nick" class="control-label">Введите ваш ник:</label>
+								<input type="text" class="input-nick form-control" name="nickname" id="nickname" placeholder="Введите ник">
+						</div>
+						<input type="hidden" value="" name="group">
+						<button type="submit" name="buy" id="buy" class="submit buy_btn btn btn-success btn-block">Купить за 60 секунд</button>
+					</div>
+				</form>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="..\styles\js\clipboard.js"></script>
+<script>
+    $(".spoiler-trigger").click(function() {
+        $(this).parent().next().collapse('toggle');
+    });
+</script>
+</body>
+
+</html>

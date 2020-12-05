@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>CubeMC - Покупка донат-услуг</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="icon" href="..\styles\img\icon.png">
+    <link rel="stylesheet" href="..\styles\css\bootstrap.css">
+    <link rel="stylesheet" href="..\styles\css\site.css">
+    <link rel="stylesheet" href="..\styles\css\styles.css?v=3">
+    <link rel="stylesheet" href="..\styles\css\font-awesome.min.css">
+    <script src="https://bootswatch.com/_vendor/jquery/dist/jquery.min.js"></script>
+    <script src="https://bootswatch.com/_vendor/popper.js/dist/umd/popper.min.js"></script>
+    <script src="https://bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse bg-inverse navbar-toggleable-md">
+        <div class="container">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="..\index.htm"><span class="logo">Cube</span><strong>MC</strong></a>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a href="..\index.htm" class="nav-link"><i class="fa fa-home"></i> Главная</a></li>
+                    <li class="nav-item"><a href="..\rules.html" class="nav-link"><i class="fa fa-pencil"></i> Правила</a></li>
+                    <li class="nav-item"><a href="..\how.html" class="nav-link"><i class="fa fa-money"></i> Как купить?</a></li>
+                    <li class="nav-item"><a href="..\donate.html" class="nav-link"><i class="fa fa-database"></i> Описание привилегий</a></li>
+                    <li class="nav-item"><a href="https://vk.me/cubesrv" class="nav-link"><i class="fa fa-send"></i> Контакты</a></li>
+                    <li class="nav-item"><a href="http://console.cubemc.ru" class="nav-link"><i class="fa fa-server"></i> Консоль</a></li>
+                </ul>
+                <span class="navbar-text d-inline-block d-lg-none">
+                   <span class="wobble badge badge-danger">Онлайн: /</span> 
+                   <span class="badge badge-primary" onclick="prompt('Скопируйте наш IP адрес и вставьте в ваш клиент:','cubemc.ru:25565'); return false;">IP: cubemc.ru</span>
+                   <a href="..\ref.html" class="wobble badge badge-success">Пригласить друзей</a>
+                </span>
+            </div>
+        </div>
+    </nav>
+    <div class="container nav-buttons d-none d-lg-flex">
+        <a class="button" href="..\play.html"><img src="..\styles\img\btn_head_g2.png"><span>Скачать Minecraft</span></a>
+        <div class="button clipboard" data-clipboard-text="CUBEMC.RU:25565"><img src="..\styles\img\btn_head_p2.png"><span>IP<br>CUBEMC.RU</span></div>
+        <a class="button big" href="..\play.html"><img src="..\styles\img\btn_head_r2.png"><span>Начать играть</span></a>
+        <a class="button" href="..\ref.html"><img src="..\styles\img\btn_head_p2.png"><span>Пригласить друзей</span></a>
+        <a class="button" href="..\index.htm"><img src="..\styles\img\btn_head_g2.png"><span>Онлайн:<br>/</span></a>
+    </div>
+    <div class="container">
+	
+        <div class="row">
+	<div class="col-12">
+		
+	</div>
+</div>
+        <div class="row">
+    <div class="card col-md-12" style="float: none; margin: 0 auto;">
+        <div class="card-body">
+            <center>
+                <h1>Реферальная система</h1>
+                <p>Войдите в свой аккаунт (ник на сервере и пароль) чтобы приглашать людей и получать призы</p>
+                <hr>
+                <h2>Авторизация:</h2>
+                <div class="ccol col-md-5 col-centered">
+                    <form method="post">
+                        <div class="form-group text-left">
+                            <label class="col-form-label">Ваш ник:</label>
+                            <input type="text" class="form-control" placeholder="Ваш ник с сервера" name="username">
+                        </div>
+                        <div class="form-group text-left">
+                            <label class="col-form-label">Ваш пароль:</label>
+                            <input type="password" class="form-control" placeholder="Ваш пароль с сервера" name="password">
+                        </div>
+                        <button type="submit" name="auth" class="btn btn-success btn-block">Войти</button>
+                    </form>
+                </div>
+            </center>
+        </div>
+    </div>
+</div>
+    </div>
+    <script src="..\styles\js\clipboard.js"></script>
+<script>
+    $(".spoiler-trigger").click(function() {
+        $(this).parent().next().collapse('toggle');
+    });
+</script>
+</body>
+
+</html>
